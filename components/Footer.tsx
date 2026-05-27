@@ -28,6 +28,7 @@ const navGroups = [
     links: [
       { label: "Veridian Protocol", href: "/" },
       { label: "Request Access", href: "/request-access" },
+      { label: "Data Room", href: "/data-room/login" },
       { label: "Regulatory Framework", href: "#technology" },
       { label: "Shariah Compliance", href: "#technology" },
     ],

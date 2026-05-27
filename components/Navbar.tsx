@@ -58,7 +58,18 @@ export default function Navbar() {
           </div>
 
           {/* CTA */}
-          <div style={{ display: "flex", alignItems: "center", gap: "1rem" }} className="hidden md:flex">
+          <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }} className="hidden md:flex">
+            <Link
+              href="/data-room/login"
+              className="nav-link"
+              style={{ fontSize: "0.875rem", display: "flex", alignItems: "center", gap: "0.35rem", textDecoration: "none" }}
+            >
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" style={{ opacity: 0.7 }}>
+                <rect x="1" y="5" width="11" height="7" rx="1.5" stroke="currentColor" strokeWidth="1.4"/>
+                <path d="M4 5V3.5a2.5 2.5 0 015 0V5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
+              </svg>
+              Data Room
+            </Link>
             <Link
               href="/request-access"
               className="btn-gold"
@@ -106,6 +117,18 @@ export default function Navbar() {
                 style={{ fontSize: "0.95rem" }}
               >{l.label}</a>
             ))}
+            <Link
+              href="/data-room/login"
+              className="nav-link"
+              style={{ fontSize: "0.95rem", display: "flex", alignItems: "center", gap: "0.4rem" }}
+              onClick={() => setMobileOpen(false)}
+            >
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" style={{ opacity: 0.7 }}>
+                <rect x="1" y="5" width="11" height="7" rx="1.5" stroke="currentColor" strokeWidth="1.4"/>
+                <path d="M4 5V3.5a2.5 2.5 0 015 0V5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
+              </svg>
+              Data Room
+            </Link>
             <Link
               href="/request-access"
               className="btn-gold"
