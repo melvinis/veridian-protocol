@@ -3,8 +3,8 @@
 const pillars = [
   {
     icon: "◈",
-    title: "Synthetic Dirham",
-    desc: "DRHM is an ERC-20 token pegged 1:1 to AED through a delta-neutral reserve strategy. Freely transferable, redeemable at par by KYB-cleared market makers, and CBUAE PTSR-aligned."
+    title: "Synthetic Digital Currency",
+    desc: "DRHM is an ERC-20 token locally-pegged through a delta-neutral reserve strategy. Freely transferable, redeemable at par by KYB-cleared market makers, and regionally PTSR-aligned."
   },
   {
     icon: "⟁",
@@ -13,8 +13,8 @@ const pillars = [
   },
   {
     icon: "⬡",
-    title: "UAE-Native Reserves",
-    desc: "Backed by UAE sovereign sukuk, DMCC-certified tokenized gold, Dubai real estate tokens, and trade finance receivables. No global stablecoin can replicate this AED-native reserve composition."
+    title: "Gulf-Native Reserves",
+    desc: "Backed by Gulf sovereign sukuk, certified tokenized gold, Gulf real estate tokens, and trade finance receivables. No global stablecoin can replicate this regionally-native reserve composition."
   },
   {
     icon: "◎",
@@ -29,7 +29,7 @@ const pillars = [
   {
     icon: "⊕",
     title: "Financial Identity",
-    desc: "Every DRHM transaction builds a verifiable on-chain financial identity. The DRHM Score unlocks undercollateralised lending and BNPL credit — giving UAE's 8.8M expatriates their first merit-based credit system."
+    desc: "Every DRHM transaction builds a verifiable on-chain financial identity. The DRHM Score unlocks undercollateralised lending and BNPL credit — giving the region's 8.8M expatriates their first merit-based credit system."
   },
 ];
 
@@ -42,11 +42,11 @@ export default function AboutSection() {
           <span className="badge-gold" style={{ marginBottom: "1.25rem", display: "inline-block" }}>About DRHM</span>
           <h2 style={{ fontSize: "clamp(2rem, 4vw, 3rem)", fontWeight: 800, lineHeight: 1.1, letterSpacing: "-0.02em", marginBottom: "1.25rem" }}>
             A Complete Financial Backbone<br />
-            <span className="text-gold-gradient">for the UAE Digital Economy</span>
+            <span className="text-gold-gradient">for the Gulf Digital Economy</span>
           </h2>
           <p style={{ color: "#8b9bb8", maxWidth: "600px", margin: "0 auto", lineHeight: 1.75, fontSize: "1.05rem" }}>
             DRHM is not just a stablecoin — it&apos;s a savings layer, a payments rail, a credit system,
-            and a programmable money platform. All built within the CBUAE&apos;s regulatory framework.
+            and a programmable money platform. All built within the regional regulatory framework.
           </p>
         </div>
 
@@ -56,9 +56,9 @@ export default function AboutSection() {
           <div style={{ position: "relative", zIndex: 1 }}>
             <div style={{ color: "#d4a843", fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "0.75rem" }}>Core Proposition</div>
             <p style={{ fontSize: "clamp(1rem, 1.8vw, 1.2rem)", color: "#f0f2f8", lineHeight: 1.75, fontWeight: 500 }}>
-              Every UAE resident — expatriate worker, SME treasurer, retail saver, institutional fund — gets a single protocol
-              that <strong style={{ color: "#f0d07a" }}>pays yield on their dirham</strong>, moves money instantly across borders at near-zero cost,
-              builds their financial identity, and unlocks credit without a UAE bank account.{" "}
+              Every Gulf resident — expatriate worker, SME treasurer, retail saver, institutional fund — gets a single protocol
+              that <strong style={{ color: "#f0d07a" }}>pays yield on their savings</strong>, moves money instantly across borders at near-zero cost,
+              builds their financial identity, and unlocks credit without a traditional bank account.{" "}
               <span style={{ color: "#d4a843" }}>Nothing like this exists in the market today.</span>
             </p>
           </div>

@@ -5,8 +5,8 @@ const features = [
     icon: "📈",
     title: "Pendle Yield Tokenization",
     badge: "DeFi Integration",
-    desc: "sDRHM is registered as a Standardized Yield token on Pendle Finance — enabling PT/YT splits with fixed maturity dates. Creates the first AED-denominated on-chain fixed-income instrument, unlocking pension funds and endowments.",
-    bullets: ["Fixed-rate PT-sDRHM instruments", "Leveraged yield via YT-sDRHM", "30/90/180/365-day AED yield curve", "Pendle $7B+ TVL ecosystem access"],
+    desc: "sDRHM is registered as a Standardized Yield token on Pendle Finance — enabling PT/YT splits with fixed maturity dates. Creates the first Gulf currency-denominated on-chain fixed-income instrument, unlocking pension funds and endowments.",
+    bullets: ["Fixed-rate PT-sDRHM instruments", "Leveraged yield via YT-sDRHM", "30/90/180/365-day yield curve", "Pendle $7B+ TVL ecosystem access"],
   },
   {
     icon: "⚡",
@@ -19,7 +19,7 @@ const features = [
     icon: "💳",
     title: "DRHM-Native BNPL",
     badge: "Credit Access",
-    desc: "sDRHM holders access buy-now-pay-later credit at participating merchants. No UAE credit bureau check required — accessible to 8.8M expatriates with thin credit files. sDRHM continues earning yield during the credit period.",
+    desc: "sDRHM holders access buy-now-pay-later credit at participating merchants. No regional credit bureau check required — accessible to 8.8M Gulf expatriates with thin credit files. sDRHM continues earning yield during the credit period.",
     bullets: ["Up to 90% of sDRHM balance as credit", "12–18% APR, 1.5–3% merchant fee", "Auto-liquidation at 105% LTV", "No collections process"],
   },
   {
@@ -33,15 +33,15 @@ const features = [
     icon: "💬",
     title: "WhatsApp Integration",
     badge: "Mobile-First",
-    desc: "90%+ of UAE blue-collar workers use WhatsApp as their primary financial channel. The DRHM WhatsApp Business API bot enables core financial actions — no app download required. Modelled on Kenya's M-Pesa.",
-    bullets: ["Balance checks in any currency", "Send DRHM to any UAE mobile number", "Instant remittance corridor transfers", "Single-message sDRHM staking"],
+    desc: "90%+ of Gulf blue-collar workers use WhatsApp as their primary financial channel. The DRHM WhatsApp Business API bot enables core financial actions — no app download required. Modelled on Kenya's M-Pesa.",
+    bullets: ["Balance checks in any currency", "Send DRHM to any Gulf mobile number", "Instant remittance corridor transfers", "Single-message sDRHM staking"],
   },
   {
     icon: "🏢",
     title: "WPS Employer Payroll",
     badge: "Enterprise Channel",
-    desc: "The UAE Wage Protection System mandates electronic wages for 5M+ formal workers. DRHM payroll: sub-minute settlement, employees earn sDRHM yield from Day 1, built-in WPS compliance. One employer = 30–80K instant onboardings.",
-    bullets: ["Sub-minute settlement vs 24–48hr banks", "sDRHM yield from first paycheck", "Full WPS compliance dashboard", "50 largest UAE employers targeted"],
+    desc: "The regional Wage Protection System mandates electronic wages for 5M+ formal workers. DRHM payroll: sub-minute settlement, employees earn sDRHM yield from Day 1, built-in WPS compliance. One employer = 30–80K instant onboardings.",
+    bullets: ["Sub-minute settlement vs 24–48hr banks", "sDRHM yield from first paycheck", "Full WPS compliance dashboard", "50 largest Gulf employers targeted"],
   },
 ];
 
@@ -54,7 +54,7 @@ export default function FeaturesSection() {
         <div style={{ textAlign: "center", marginBottom: "4.5rem" }}>
           <span className="badge-gold" style={{ marginBottom: "1.25rem", display: "inline-block" }}>Product Features</span>
           <h2 style={{ fontSize: "clamp(2rem, 4vw, 3rem)", fontWeight: 800, lineHeight: 1.1, letterSpacing: "-0.02em", marginBottom: "1.25rem" }}>
-            Built for <span className="text-gold-gradient">Every UAE Resident</span>
+            Built for <span className="text-gold-gradient">Every Gulf Resident</span>
           </h2>
           <p style={{ color: "#8b9bb8", maxWidth: "520px", margin: "0 auto", lineHeight: 1.75, fontSize: "1.05rem" }}>
             Eight integrated product features spanning DeFi, enterprise payroll, consumer credit, and mobile-first distribution.

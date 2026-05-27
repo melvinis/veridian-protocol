@@ -3,10 +3,10 @@ import Link from "next/link";
 import Image from "next/image";
 
 const stats = [
-  { value: "AED 8B", label: "Supply Target (Year 3)", sub: "Synthetic dirham issued" },
+  { value: "8B+", label: "Supply Target (Year 3)", sub: "Digital tokens issued" },
   { value: "8–14%", label: "sDRHM Target APY", sub: "Balanced vault, Year 1–2" },
   { value: "750K", label: "Active Wallets (Yr 3)", sub: "Retail, SME & institutional" },
-  { value: "AED 408M", label: "Protocol Revenue Yr 3", sub: "Across 6 revenue streams" },
+  { value: "408M+", label: "Protocol Revenue Yr 3", sub: "Across 6 revenue streams" },
 ];
 
 export default function Hero() {
@@ -31,7 +31,7 @@ export default function Hero() {
         {/* Pre-headline badge */}
         <div style={{ marginBottom: "2rem", display: "flex", alignItems: "center", gap: "1rem", flexWrap: "wrap" }}>
           <Image src="/veridian-mark.svg" alt="Veridian Protocol" width={48} height={48} priority />
-          <span className="badge-gold">🇦🇪 UAE · CBUAE PTSR Licensed Pathway · Shariah-Certified</span>
+          <span className="badge-gold">🌙 Gulf · Regional PTSR Licensed Pathway · Shariah-Certified</span>
         </div>
 
         {/* Main headline */}
@@ -43,11 +43,11 @@ export default function Hero() {
           maxWidth: "800px",
           marginBottom: "1.75rem",
         }}>
-          <span style={{ color: "#f0f2f8" }}>UAE&apos;s First</span>
+          <span style={{ color: "#f0f2f8" }}>Gulf&apos;s First</span>
           <br />
           <span className="text-gold-gradient">Yield-Bearing</span>
           <br />
-          <span style={{ color: "#f0f2f8" }}>Synthetic Dirham</span>
+          <span style={{ color: "#f0f2f8" }}>Digital Currency</span>
         </h1>
 
         {/* Sub-headline */}
@@ -58,9 +58,9 @@ export default function Hero() {
           lineHeight: 1.7,
           marginBottom: "2.75rem",
         }}>
-          DRHM is an AED-pegged digital token backed by UAE sovereign sukuk, DMCC gold,
+          DRHM is a Gulf currency-pegged digital token backed by Gulf sovereign sukuk, certified gold,
           and real-world assets — delivering 8–14% APY to retail savers, SME treasuries,
-          and institutional investors. All within the CBUAE&apos;s PTSR framework.
+          and institutional investors. All within the regional PTSR framework.
         </p>
 
         {/* CTA buttons */}
@@ -112,7 +112,7 @@ export default function Hero() {
         {/* Trust signals */}
         <div style={{ marginTop: "3rem", display: "flex", flexWrap: "wrap", gap: "2rem", alignItems: "center" }}>
           <span style={{ color: "#4a5a75", fontSize: "0.78rem", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase" }}>Designed for</span>
-          {["CBUAE PTSR", "VARA Dubai", "AAOIFI Shariah", "AML/FATF", "Chainalysis"].map((tag) => (
+          {["Regional PTSR", "VARA", "AAOIFI Shariah", "AML/FATF", "Chainalysis"].map((tag) => (
             <span key={tag} style={{
               color: "#6a7a95", fontSize: "0.8rem", fontWeight: 500,
               padding: "0.3rem 0.8rem", borderRadius: "6px",

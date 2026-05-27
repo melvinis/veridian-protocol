@@ -7,18 +7,18 @@ const phases = [
     status: "Seed Round",
     color: "#d4a843",
     items: [
-      "PTSR license application + CBUAE sandbox entry",
+      "PTSR license application + regulatory sandbox entry",
       "VARA pre-application",
       "DRHM ERC-20, MintRedeem V2, AccessControl deployed",
       "Three sDRHM vaults + ReserveFund contracts live",
-      "UAE sovereign sukuk reserve (primary) + DMCC gold integration",
+      "Gulf sovereign sukuk reserve (primary) + certified gold integration",
       "AI Risk Sentinel live from Day 1",
       "AI Treasury Agent (rule-based Phase 1)",
       "3 market maker partners signed",
       "DRHM app launched (iOS + Android)",
-      "AED 50M Insurance Fund seeded from Seed Round",
+      "50M Insurance Fund seeded from Seed Round",
     ],
-    fundingNote: "Seed: AED 70M — Regulatory + Development + Insurance Fund",
+    fundingNote: "Seed: 70M — Regulatory + Development + Insurance Fund",
   },
   {
     label: "Phase 2",
@@ -26,7 +26,7 @@ const phases = [
     status: "Series A",
     color: "#60c8a0",
     items: [
-      "Full CBUAE PTSR license granted",
+      "Full Regional PTSR license granted",
       "VARA registration complete",
       "PaymentRouter + ROSCAFactory deployed",
       "WhatsApp Business API bot live",
@@ -34,10 +34,10 @@ const phases = [
       "Trade finance receivables pool (senior tranche)",
       "AI Treasury RL model live + bear-market floor automation",
       "200 merchant integrations",
-      "5 UAE employer payroll contracts (50,000 workers)",
-      "Insurance Fund: AED 110M",
+      "5 Gulf employer payroll contracts (50,000 workers)",
+      "Insurance Fund: 110M",
     ],
-    fundingNote: "Series A: AED 250M — Market makers, corridors, merchants, AI",
+    fundingNote: "Series A: 250M — Market makers, corridors, merchants, AI",
   },
   {
     label: "Phase 3",
@@ -49,14 +49,14 @@ const phases = [
       "CreditScore contract + ZK identity system live",
       "BNPL module deployed + merchant SDK",
       "DRT Reserve Token for institutional investors",
-      "Dubai real estate token collateral (SPV structure)",
+      "Gulf real estate token collateral (SPV structure)",
       "DRHM Score ML model live + ZK credential generation",
       "GCC remittance corridors live",
-      "Institutional sDRHM product (ADIA, Mubadala outreach)",
+      "Institutional sDRHM product (sovereign wealth fund outreach)",
       "Pendle YT markets live",
-      "Insurance Fund: AED 250M target",
+      "Insurance Fund: 250M target",
     ],
-    fundingNote: "Series B: AED 600M+ — RWA SPVs, GCC expansion, whitelabel",
+    fundingNote: "Series B: 600M+ — RWA SPVs, GCC expansion, whitelabel",
   },
   {
     label: "Phase 4",
@@ -66,16 +66,16 @@ const phases = [
     items: [
       "DGT governance token launch via VARA-regulated offering",
       "Full DAO governance live",
-      "UAE Digital Dirham CBDC bridge deployed",
+      "Regional Digital Currency CBDC bridge deployed",
       "DRHM positioned as yield layer above sovereign CBDC",
-      "Whitelabel protocol stack licensed to 3–5 UAE/GCC banks",
-      "DRHM Score accepted by 3+ UAE banks for expat loan underwriting",
+      "Whitelabel protocol stack licensed to 3–5 Gulf banks",
+      "DRHM Score accepted by 3+ Gulf banks for expat loan underwriting",
       "DRHM deployed on 10+ chains",
-      "DRHM-SAR and DRHM-QAR corridors live",
-      "AED 45B DRHM supply (Year 5 target)",
-      "AED 2.585B protocol revenue (Year 5 target)",
+      "Multi-currency GCC corridors live",
+      "45B DRHM supply (Year 5 target)",
+      "2.585B protocol revenue (Year 5 target)",
     ],
-    fundingNote: "Revenue-funded: AED 2.585B Year 5 EBITDA trajectory",
+    fundingNote: "Revenue-funded: 2.585B Year 5 EBITDA trajectory",
   },
 ];
 
@@ -152,23 +152,23 @@ export default function RoadmapSection() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td style={{ color: "#f0f2f8", fontWeight: 600 }}>DRHM Supply (AED B)</td>
+                    <td style={{ color: "#f0f2f8", fontWeight: 600 }}>DRHM Supply (B)</td>
                     <td>0.5</td><td>2.5</td><td style={{ color: "#d4a843" }}>8.0</td><td>20.0</td><td style={{ color: "#f0d07a", fontWeight: 700 }}>45.0</td>
                   </tr>
                   <tr>
-                    <td style={{ color: "#f0f2f8", fontWeight: 600 }}>sDRHM Supply (AED B)</td>
+                    <td style={{ color: "#f0f2f8", fontWeight: 600 }}>sDRHM Supply (B)</td>
                     <td>0.15</td><td>0.9</td><td>3.2</td><td>9.0</td><td style={{ color: "#f0d07a", fontWeight: 700 }}>22.0</td>
                   </tr>
                   <tr>
-                    <td style={{ color: "#f0f2f8", fontWeight: 600 }}>Total Revenue (AED M)</td>
+                    <td style={{ color: "#f0f2f8", fontWeight: 600 }}>Total Revenue (M)</td>
                     <td>21</td><td>133</td><td style={{ color: "#d4a843" }}>451</td><td>1,165</td><td style={{ color: "#f0d07a", fontWeight: 700 }}>2,585</td>
                   </tr>
                   <tr>
-                    <td style={{ color: "#f0f2f8", fontWeight: 600 }}>EBITDA (AED M)</td>
+                    <td style={{ color: "#f0f2f8", fontWeight: 600 }}>EBITDA (M)</td>
                     <td style={{ color: "#f07a60" }}>(9)</td><td style={{ color: "#60c8a0" }}>78</td><td style={{ color: "#60c8a0" }}>361</td><td style={{ color: "#60c8a0" }}>1,025</td><td style={{ color: "#f0d07a", fontWeight: 700 }}>2,385</td>
                   </tr>
                   <tr>
-                    <td style={{ color: "#f0f2f8", fontWeight: 600 }}>Insurance Fund (AED M)</td>
+                    <td style={{ color: "#f0f2f8", fontWeight: 600 }}>Insurance Fund (M)</td>
                     <td>50</td><td>110</td><td>250</td><td>500</td><td style={{ color: "#f0d07a", fontWeight: 700 }}>1,000</td>
                   </tr>
                 </tbody>
@@ -176,7 +176,7 @@ export default function RoadmapSection() {
             </div>
           </div>
           <p style={{ color: "#4a5a75", fontSize: "0.78rem", marginTop: "0.75rem" }}>
-            Breakeven at Month 14 (AED 700M supply). EBITDA expansion driven by BNPL, identity credentials, and whitelabel licensing compounding on the yield and payments base.
+            Breakeven at Month 14 (700M supply). EBITDA expansion driven by BNPL, identity credentials, and whitelabel licensing compounding on the yield and payments base.
           </p>
         </div>
 

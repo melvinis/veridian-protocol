@@ -1,22 +1,22 @@
 "use client";
 
 const marketStats = [
-  { value: "$45B", label: "UAE Remittance Market", detail: "8.8M expatriates sending money home annually, averaging 3–5% in fees" },
+  { value: "$45B", label: "Gulf Remittance Market", detail: "8.8M expatriates sending money home annually, averaging 3–5% in fees" },
   { value: "$3.7T", label: "Global Stablecoins by 2030", detail: "Citi Institute projection. Volume surged 91% in 2025 to $10.9T settled" },
-  { value: "AED 600B", label: "UAE Retail Deposits", detail: "DRHM targets AED 3.2B in sDRHM savings by Year 3" },
-  { value: "$350B", label: "Jebel Ali Trade Flow/yr", detail: "UAE SME invoices tokenized as 90-day AED-denominated receivables" },
+  { value: "600B+", label: "Gulf Retail Deposits", detail: "DRHM targets 3.2B in sDRHM savings by Year 3" },
+  { value: "$350B", label: "Gulf Trade Hub Flow/yr", detail: "Gulf SME invoices tokenized as 90-day locally-denominated receivables" },
 ];
 
 const tailwinds = [
   {
     icon: "📜",
-    title: "CBUAE PTSR Framework",
-    desc: "CBUAE's Payment Token Services Regulation (effective July 2024) creates an explicit licensing pathway for AED stablecoin issuers. AE Coin licensed Dec 2024; DDSC (FAB/IHC/ADQ) approved May 2026."
+    title: "Regional PTSR Framework",
+    desc: "The regional Payment Token Services Regulation creates an explicit licensing pathway for digital currency issuers. Multiple issuers have already received approvals, with more in progress."
   },
   {
     icon: "🏛️",
     title: "Government Digital Mandate",
-    desc: "Dubai targets 90% digital transactions by 2026. CBUAE now mandates merchant acceptance of licensed dirham stablecoins across UAE mainland — the regulatory tailwind is already law."
+    desc: "Gulf governments are targeting near-100% digital transactions within this decade. Regulators are actively mandating merchant acceptance of licensed digital currency stablecoins — the regulatory tailwind is already law."
   },
   {
     icon: "📈",
@@ -26,17 +26,17 @@ const tailwinds = [
   {
     icon: "⚖️",
     title: "US GENIUS Act Advantage",
-    desc: "The US GENIUS Act (July 2025) prohibits yield-bearing fiat-backed stablecoins in America. This creates a structural competitive advantage for UAE-domiciled protocol designs."
+    desc: "The US GENIUS Act (July 2025) prohibits yield-bearing fiat-backed stablecoins in America. This creates a structural competitive advantage for Gulf-domiciled protocol designs."
   },
 ];
 
 const segments = [
   { segment: "Expatriate remittances", tam: "$45B/yr", sam: "$900M/yr processed", mechanism: "DRHM corridor rails" },
-  { segment: "UAE retail deposits", tam: "AED 600B", sam: "AED 3.2B in sDRHM", mechanism: "Yield savings product" },
+  { segment: "Gulf retail deposits", tam: "600B+", sam: "3.2B in sDRHM", mechanism: "Yield savings product" },
   { segment: "SME cross-border payments", tam: "$7.8B/yr", sam: "$400M/yr", mechanism: "Programmable flows" },
-  { segment: "Trade finance (Jebel Ali)", tam: "$350B/yr", sam: "$2B in RWA pools", mechanism: "Trade receivables collateral" },
-  { segment: "Tokenized RWA market", tam: "$12B global (Mar 2026)", sam: "AED 1B DRHM-backed", mechanism: "RE + gold + sukuk" },
-  { segment: "DeFi institutional yield", tam: "$6B Pendle TVL", sam: "AED 500M sDRHM", mechanism: "Yield tokenization" },
+  { segment: "Trade finance (Gulf Hub)", tam: "$350B/yr", sam: "$2B in RWA pools", mechanism: "Trade receivables collateral" },
+  { segment: "Tokenized RWA market", tam: "$12B global (Mar 2026)", sam: "1B+ DRHM-backed", mechanism: "RE + gold + sukuk" },
+  { segment: "DeFi institutional yield", tam: "$6B Pendle TVL", sam: "500M+ sDRHM", mechanism: "Yield tokenization" },
 ];
 
 export default function MarketSection() {

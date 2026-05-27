@@ -4,13 +4,13 @@ import Image from "next/image";
 const tokens = [
   {
     symbol: "DRHM",
-    name: "Synthetic Dirham",
+    name: "Synthetic Currency",
     color: "#d4a843",
     bg: "rgba(212,168,67,0.08)",
     border: "rgba(212,168,67,0.3)",
     logo: "/drhm-mark.svg",
-    desc: "ERC-20 token pegged 1:1 to AED via a delta-neutral reserve strategy. Freely transferable, usable for payments, and redeemable at par by KYB-cleared market makers.",
-    tags: ["ERC-20", "AED Peg", "Delta-Neutral", "PTSR Compliant"],
+    desc: "ERC-20 token locally-pegged via a delta-neutral reserve strategy. Freely transferable, usable for payments, and redeemable at par by KYB-cleared market makers.",
+    tags: ["ERC-20", "Local Peg", "Delta-Neutral", "PTSR Compliant"],
   },
   {
     symbol: "sDRHM",
@@ -45,18 +45,18 @@ const tokens = [
 ];
 
 const vaults = [
-  { name: "Conservative", symbol: "sDRHM-C", apy: "4–6%", pct: 38, reserve: "95% UAE sukuk + 5% DMCC gold", user: "Retirees, school fee savers, shariah-compliant institutional funds", color: "#8b9bb8" },
-  { name: "Balanced", symbol: "sDRHM-B", apy: "8–12%", pct: 70, reserve: "80% sukuk + 10% perp hedge + 10% gold/trade finance", user: "UAE middle-income savers, SME treasuries, family offices", color: "#d4a843", flagship: true },
+  { name: "Conservative", symbol: "sDRHM-C", apy: "4–6%", pct: 38, reserve: "95% Gulf sukuk + 5% certified gold", user: "Retirees, school fee savers, shariah-compliant institutional funds", color: "#8b9bb8" },
+  { name: "Balanced", symbol: "sDRHM-B", apy: "8–12%", pct: 70, reserve: "80% sukuk + 10% perp hedge + 10% gold/trade finance", user: "Gulf middle-income savers, SME treasuries, family offices", color: "#d4a843", flagship: true },
   { name: "Aggressive", symbol: "sDRHM-A", apy: "14–22%", pct: 100, reserve: "50% sukuk + 30% perp hedge + 20% RWA (RE + trade finance)", user: "DeFi-native yield farmers, crypto funds, Pendle YT buyers", color: "#f07a60" },
 ];
 
 const yieldStreams = [
-  { name: "UAE Sovereign Sukuk", pct: 52, apy: "4–5%", desc: "Primary reserve: CBUAE-approved UAE T-bills held via licensed custodians. Shariah-certified." },
+  { name: "Gulf Sovereign Sukuk", pct: 52, apy: "4–5%", desc: "Primary reserve: central bank-approved Gulf T-bills held via licensed custodians. Shariah-certified." },
   { name: "Perpetual Funding Rate", pct: 100, apy: "0–15%", desc: "Delta-neutral ETH/BTC short on regulated venues. Historically 8–12% in bull cycles." },
-  { name: "Tokenized Dubai Gold", pct: 18, apy: "1–2%", desc: "DMCC-certified gold tokens earn storage lease yield. Inflation-resistant, shariah-compliant." },
-  { name: "Trade Finance Receivables", pct: 45, apy: "2–4%", desc: "UAE SME invoice receivables via on-chain credit pools. 90-day AED-denominated instruments." },
-  { name: "Tokenized Real Estate", pct: 30, apy: "1–3%", desc: "Dubai property rental income via VARA-regulated SPV tokens. 5–8% rental yield." },
-  { name: "AED Institutional Deposits", pct: 38, apy: "3–4%", desc: "Excess stable reserves earn institutional rates from UAE licensed banks." },
+  { name: "Tokenized Gulf Gold", pct: 18, apy: "1–2%", desc: "Certified gold tokens earn storage lease yield. Inflation-resistant, shariah-compliant." },
+  { name: "Trade Finance Receivables", pct: 45, apy: "2–4%", desc: "Gulf SME invoice receivables via on-chain credit pools. 90-day locally-denominated instruments." },
+  { name: "Tokenized Real Estate", pct: 30, apy: "1–3%", desc: "Gulf property rental income via regulated SPV tokens. 5–8% rental yield." },
+  { name: "Gulf Institutional Deposits", pct: 38, apy: "3–4%", desc: "Excess stable reserves earn institutional rates from Gulf licensed banks." },
 ];
 
 export default function ProductSection() {

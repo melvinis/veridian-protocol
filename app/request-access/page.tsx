@@ -164,7 +164,7 @@ export default function RequestAccessPage() {
                 {/* AUM (conditional context) */}
                 <div>
                   <label style={{ display: "block", color: "#8b9bb8", fontSize: "0.8rem", fontWeight: 600, marginBottom: "0.4rem" }}>AUM / Capital Under Management <span style={{ color: "#4a5a75", fontWeight: 400 }}>(optional)</span></label>
-                  <input className="input-dark" type="text" placeholder="e.g. AED 500M, $200M, Not applicable"
+                  <input className="input-dark" type="text" placeholder="e.g. $500M, €200M, Not applicable"
                     value={formState.aum}
                     onChange={(e) => setFormState({ ...formState, aum: e.target.value })} />
                 </div>

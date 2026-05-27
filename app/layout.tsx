@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Veridian Protocol | DRHM — UAE's Yield-Bearing Synthetic Dirham",
+  title: "Veridian Protocol | DRHM — Gulf's Yield-Bearing Digital Currency",
   description:
-    "Veridian Protocol is building DRHM — the UAE's first yield-bearing synthetic dirham. AED-pegged, Shariah-certified, CBUAE-aligned. 8–14% APY for retail savers, SMEs, and institutions.",
+    "Veridian Protocol is building DRHM — the Gulf's first yield-bearing digital currency protocol. Locally-pegged, Shariah-certified, and regionally compliant. 8–14% APY for retail savers, SMEs, and institutions.",
   keywords: [
-    "DRHM", "synthetic dirham", "UAE stablecoin", "yield-bearing stablecoin",
-    "AED stablecoin", "Veridian Protocol", "UAE DeFi", "CBUAE PTSR",
-    "Islamic finance crypto", "UAE crypto", "dirham stablecoin"
+    "DRHM", "Gulf digital currency", "Gulf stablecoin", "yield-bearing stablecoin",
+    "Gulf DeFi", "Veridian Protocol", "Middle East DeFi", "regional PTSR",
+    "Islamic finance crypto", "Gulf crypto", "digital currency protocol"
   ],
   openGraph: {
-    title: "Veridian Protocol | DRHM Synthetic Dirham",
-    description: "UAE's first yield-bearing synthetic dirham — 8–14% APY, Shariah-certified, CBUAE-aligned.",
+    title: "Veridian Protocol | DRHM Digital Currency",
+    description: "Gulf's first yield-bearing digital currency — 8–14% APY, Shariah-certified, regionally compliant.",
     type: "website",
   },
 };

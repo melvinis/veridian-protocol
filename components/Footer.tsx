@@ -50,10 +50,10 @@ export default function Footer() {
               </span>
             </div>
             <p style={{ color: "#5a6a85", fontSize: "0.85rem", lineHeight: 1.75, maxWidth: "280px", marginBottom: "1.5rem" }}>
-              Building the financial backbone of the UAE digital economy — a yield-bearing synthetic dirham for every resident, business, and institution.
+              Building the financial backbone of the Gulf digital economy — a yield-bearing digital currency for every resident, business, and institution.
             </p>
             <div style={{ display: "flex", gap: "0.75rem" }}>
-              {["UAE", "CBUAE PTSR", "Shariah-Cert.", "VARA"].map((tag) => (
+              {["Gulf", "Regional PTSR", "Shariah-Cert.", "VARA"].map((tag) => (
                 <span key={tag} style={{ fontSize: "0.68rem", color: "#4a5a75", border: "1px solid rgba(255,255,255,0.07)", padding: "0.2rem 0.5rem", borderRadius: "5px" }}>{tag}</span>
               ))}
             </div>

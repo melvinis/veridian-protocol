@@ -30,11 +30,11 @@ export default function Home() {
           <div style={{ position: "relative", zIndex: 10, maxWidth: "700px", margin: "0 auto", padding: "0 2rem", textAlign: "center" }}>
             <span className="badge-gold" style={{ marginBottom: "1.5rem", display: "inline-block" }}>Private Access</span>
             <h2 style={{ fontSize: "clamp(2.2rem, 5vw, 3.5rem)", fontWeight: 900, lineHeight: 1.08, letterSpacing: "-0.03em", marginBottom: "1.5rem" }}>
-              Be Part of the UAE&apos;s<br />
+              Be Part of the Gulf&apos;s<br />
               <span className="text-gold-gradient">Financial Revolution</span>
             </h2>
             <p style={{ color: "#8b9bb8", fontSize: "1.1rem", lineHeight: 1.75, marginBottom: "2.75rem", maxWidth: "520px", margin: "0 auto 2.75rem" }}>
-              Whether you&apos;re an institutional investor, DeFi fund, UAE employer, or financial institution — DRHM has a product built precisely for your needs.
+              Whether you&apos;re an institutional investor, DeFi fund, Gulf employer, or financial institution — DRHM has a product built precisely for your needs.
             </p>
             <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "1rem" }}>
               <Link
@@ -56,7 +56,7 @@ export default function Home() {
             {/* Mini trust indicators */}
             <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "2rem", marginTop: "3.5rem" }}>
               {[
-                { value: "AED 8B", label: "Year 3 Supply Target" },
+                { value: "8B+", label: "Year 3 Supply Target" },
                 { value: "8–14%", label: "sDRHM APY" },
                 { value: "18", label: "Integrated Features" },
                 { value: "4", label: "Funding Phases" },

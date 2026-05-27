@@ -4,11 +4,11 @@ const contracts = [
   { name: "DRHM ERC-20", desc: "Token contract with mint/burn restricted to MintRedeem V2. Pause function via 2-of-5 Protocol Council multisig. Upgradeable via Transparent Proxy with 48-hour timelock." },
   { name: "MintRedeem V2", desc: "EIP-712 signed order verification, slippage enforcement, atomic collateral-in / DRHM-out. Handles three collateral types with type-specific oracle routing." },
   { name: "sDRHM ERC-4626 ×3", desc: "Three independently deployed vaults (Conservative, Balanced, Aggressive) with distinct reserve allocation parameters. Daily exchange rate update from yield oracle." },
-  { name: "OracleAdapter", desc: "Chainlink AED/USD + sukuk NAV + gold price + RWA property NAV feeds. Circuit breaker: mint/redeem paused if oracle deviation exceeds 0.5% from 30-min TWAP." },
+  { name: "OracleAdapter", desc: "Chainlink local/USD + sukuk NAV + gold price + RWA property NAV feeds. Circuit breaker: mint/redeem paused if oracle deviation exceeds 0.5% from 30-min TWAP." },
   { name: "PaymentRouter", desc: "Optimised transfer contract for merchant, P2P, recurring, and conditional payments. Fee collection, referral splits, fiat off-ramp triggers, programmable flow scheduler." },
   { name: "ROSCAFactory", desc: "Factory contract deploying individual savings circles. Handles contributions, sDRHM yield accrual, randomised/priority distribution, and defaulting member handling." },
   { name: "CreditScore", desc: "On-chain DRHM Score registry. ML model outputs stored as score hash. ZK credential generation interface. BNPL collateral lock/unlock logic. Undercollateralised loan origination." },
-  { name: "BridgeAdapter", desc: "LayerZero CCTP cross-chain messaging for DRHM on Polygon, Base, Arbitrum, BNB Chain. CBDC bridge interface prepared for Digital Dirham launch." },
+  { name: "BridgeAdapter", desc: "LayerZero CCTP cross-chain messaging for DRHM on Polygon, Base, Arbitrum, BNB Chain. CBDC bridge interface prepared for regional Digital Currency launch." },
 ];
 
 const aiSystems = [
@@ -17,7 +17,7 @@ const aiSystems = [
     title: "AI Treasury Agent",
     color: "#d4a843",
     points: [
-      "RL model on AWS SageMaker UAE region",
+      "RL model on AWS SageMaker regional infrastructure",
       "Monitors 5 exchanges + 3 oracle feeds every 15 minutes",
       "Rebalances across 6 yield streams within governance bounds",
       "Triggers automatic bear-market yield floor at 72hr negative funding",
@@ -30,7 +30,7 @@ const aiSystems = [
     color: "#60c8a0",
     points: [
       "24/7 monitoring across on-chain and off-chain data",
-      "Oracle manipulation detection: auto-pause at 0.3% AED deviation",
+      "Oracle manipulation detection: auto-pause at 0.3% currency deviation",
       "Run-risk alerts: flags 5× volume spikes within 1-hour windows",
       "Exchange health monitoring: margin, latency, liquidation risk",
       "30-second alert escalation to Protocol Council",
@@ -54,7 +54,7 @@ const audits = [
   { name: "Trail of Bits", type: "Smart Contract Audit" },
   { name: "Certora", type: "Formal Verification" },
   { name: "Independent 3rd Firm", type: "Independent Review" },
-  { name: "AED 5M Bug Bounty", type: "Ongoing Security" },
+  { name: "$5M Bug Bounty", type: "Ongoing Security" },
 ];
 
 export default function TechnologySection() {
@@ -127,7 +127,7 @@ export default function TechnologySection() {
             <div>
               <h3 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#f0f2f8", marginBottom: "0.5rem" }}>Triple-Audited Security</h3>
               <p style={{ color: "#8b9bb8", fontSize: "0.875rem", maxWidth: "400px", lineHeight: 1.6 }}>
-                Formal verification by Certora, independent review by Trail of Bits, and an AED 5M continuous bug bounty program.
+                Formal verification by Certora, independent review by Trail of Bits, and a $5M continuous bug bounty program.
               </p>
             </div>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem" }}>
