@@ -1,3 +1,5 @@
+"use client";
+
 const marketStats = [
   { value: "$45B", label: "UAE Remittance Market", detail: "8.8M expatriates sending money home annually, averaging 3–5% in fees" },
   { value: "$3.7T", label: "Global Stablecoins by 2030", detail: "Citi Institute projection. Volume surged 91% in 2025 to $10.9T settled" },

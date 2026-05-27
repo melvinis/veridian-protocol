@@ -1,3 +1,5 @@
+"use client";
+
 const contracts = [
   { name: "DRHM ERC-20", desc: "Token contract with mint/burn restricted to MintRedeem V2. Pause function via 2-of-5 Protocol Council multisig. Upgradeable via Transparent Proxy with 48-hour timelock." },
   { name: "MintRedeem V2", desc: "EIP-712 signed order verification, slippage enforcement, atomic collateral-in / DRHM-out. Handles three collateral types with type-specific oracle routing." },

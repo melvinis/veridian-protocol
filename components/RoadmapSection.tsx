@@ -1,3 +1,5 @@
+"use client";
+
 const phases = [
   {
     label: "Phase 1",
