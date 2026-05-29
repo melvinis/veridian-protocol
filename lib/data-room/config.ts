@@ -12,6 +12,8 @@ export interface DataRoomDocument {
   pages?: number;
   lastUpdated: string;
   available: boolean;
+  /** Path inside the `data-room-files` Supabase Storage bucket */
+  storagePath?: string;
 }
 
 export interface DataRoomFolder {
@@ -55,20 +57,20 @@ export const DATA_ROOM_FOLDERS: DataRoomFolder[] = [
       {
         id: "exec-summary",
         name: "Executive Summary",
-        type: "PDF",
+        type: "DOCX",
         description: "One-page protocol overview for investors",
-        pages: 1,
         lastUpdated: "May 2026",
-        available: false,
+        available: true,
+        storagePath: "Pitch Deck & Executive Summary/Veridian_DRHM_Executive_Summary.docx",
       },
       {
         id: "investor-deck",
         name: "Investor Presentation Deck",
         type: "PPTX",
         description: "32-slide comprehensive investor presentation",
-        pages: 32,
         lastUpdated: "May 2026",
-        available: false,
+        available: true,
+        storagePath: "Pitch Deck & Executive Summary/Veridian_DRHM_Investor_Deck.pptx",
       },
       {
         id: "protocol-overview",
@@ -94,7 +96,8 @@ export const DATA_ROOM_FOLDERS: DataRoomFolder[] = [
         type: "XLSX",
         description: "Full revenue, expense and cash flow projections",
         lastUpdated: "May 2026",
-        available: false,
+        available: true,
+        storagePath: "Financial Model & Projections/Veridian_DRHM_Financial_Model_Valuation.xlsx",
       },
       {
         id: "cap-table",
@@ -214,6 +217,24 @@ export const DATA_ROOM_FOLDERS: DataRoomFolder[] = [
         pages: 40,
         lastUpdated: "May 2026",
         available: false,
+      },
+    ],
+  },
+  {
+    id: "corporate-strategy",
+    name: "Corporate Strategy",
+    description: "Business plan, strategic roadmap, and go-to-market documentation.",
+    icon: "🗺️",
+    roles: ["series_a", "institutional", "strategic_partner"],
+    documents: [
+      {
+        id: "business-plan",
+        name: "Veridian Protocol Business Plan 2026",
+        type: "DOCX",
+        description: "Comprehensive business plan covering strategy, operations, and growth targets",
+        lastUpdated: "May 2026",
+        available: true,
+        storagePath: "Corporate Strategy/Veridian_Protocol_FZCO_Business_Plan_2026_V1.1.docx",
       },
     ],
   },

@@ -31,6 +31,7 @@ export default function FolderPage() {
   const [profile, setProfile] = useState<Profile | null>(null);
   const [loading, setLoading] = useState(true);
   const [folder, setFolder] = useState<DataRoomFolder | null>(null);
+  const [signedUrls, setSignedUrls] = useState<Record<string, string>>({});
 
   useEffect(() => {
     const fetchData = async () => {
@@ -50,8 +51,22 @@ export default function FolderPage() {
       const role = (data?.role || "seed_investor") as Role;
       if (!canAccessFolder(role, folderId)) { router.push("/data-room"); return; }
 
+      // Fetch signed URLs for documents that have a storage path
+      const urlMap: Record<string, string> = {};
+      await Promise.all(
+        resolvedFolder.documents
+          .filter((doc) => doc.storagePath)
+          .map(async (doc) => {
+            const { data: signed } = await supabase.storage
+              .from("data-room-files")
+              .createSignedUrl(doc.storagePath!, 3600);
+            if (signed?.signedUrl) urlMap[doc.id] = signed.signedUrl;
+          })
+      );
+
       setProfile(data);
       setFolder(resolvedFolder);
+      setSignedUrls(urlMap);
       setLoading(false);
     };
     fetchData();
@@ -150,8 +165,8 @@ export default function FolderPage() {
                 </div>
                 <div style={{ color: "#3a4a60", fontSize: "0.78rem", textAlign: "right", whiteSpace: "nowrap" }}>{doc.lastUpdated}</div>
                 <div style={{ textAlign: "right", minWidth: "100px" }}>
-                  {doc.available ? (
-                    <a href="#" style={{ display: "inline-flex", alignItems: "center", gap: "0.35rem", color: "#d4a843", fontSize: "0.78rem", fontWeight: 600, background: "rgba(212,168,67,0.08)", border: "1px solid rgba(212,168,67,0.25)", borderRadius: "6px", padding: "0.35rem 0.75rem", textDecoration: "none" }}>
+                  {doc.available && signedUrls[doc.id] ? (
+                    <a href={signedUrls[doc.id]} download target="_blank" rel="noopener noreferrer" style={{ display: "inline-flex", alignItems: "center", gap: "0.35rem", color: "#d4a843", fontSize: "0.78rem", fontWeight: 600, background: "rgba(212,168,67,0.08)", border: "1px solid rgba(212,168,67,0.25)", borderRadius: "6px", padding: "0.35rem 0.75rem", textDecoration: "none" }}>
                       <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M5.5 1v6M2.5 5l3 3 3-3M1 9h9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
                       Download
                     </a>
