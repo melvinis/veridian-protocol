@@ -77,7 +77,7 @@ export const DATA_ROOM_FOLDERS: DataRoomFolder[] = [
         name: "DRHM Protocol Whitepaper",
         type: "DOCX",
         description: "Detailed whitepaper on the protocol architecture and yield mechanics, with full mathematical formulations",
-        pages: 17,
+        pages: 16,
         lastUpdated: "May 2026",
         available: true,
         storagePath: "Pitch Deck & Executive Summary/Veridian_DRHM_Protocol_Whitepaper.docx",
