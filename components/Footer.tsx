@@ -11,6 +11,7 @@ const navGroups = [
       { label: "Product Architecture", href: "#product" },
       { label: "Technology", href: "#technology" },
       { label: "Roadmap", href: "#roadmap" },
+      { label: "Whitepaper (PDF)", href: "/DRHM-Protocol-Whitepaper.pdf" },
     ],
   },
   {
@@ -67,7 +68,10 @@ export default function Footer() {
               <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "0.7rem" }}>
                 {g.links.map((l) => (
                   <li key={l.label}>
-                    <a href={l.href} style={{ color: "#5a6a85", fontSize: "0.875rem", textDecoration: "none", transition: "color 0.2s" }}
+                    <a href={l.href}
+                      target={l.href.endsWith(".pdf") ? "_blank" : undefined}
+                      rel={l.href.endsWith(".pdf") ? "noopener noreferrer" : undefined}
+                      style={{ color: "#5a6a85", fontSize: "0.875rem", textDecoration: "none", transition: "color 0.2s" }}
                       onMouseEnter={(e) => (e.currentTarget.style.color = "#8b9bb8")}
                       onMouseLeave={(e) => (e.currentTarget.style.color = "#5a6a75")}>
                       {l.label}

@@ -70,6 +70,19 @@ export default function Navbar() {
               </svg>
               Data Room
             </Link>
+            <a
+              href="/DRHM-Protocol-Whitepaper.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-link"
+              style={{ fontSize: "0.875rem", display: "flex", alignItems: "center", gap: "0.35rem", textDecoration: "none" }}
+            >
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" style={{ opacity: 0.7 }}>
+                <path d="M3 1.5h4.5L11 5v6.5a1 1 0 01-1 1H3a1 1 0 01-1-1v-9a1 1 0 011-1z" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round"/>
+                <path d="M7.5 1.5V5H11" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round"/>
+              </svg>
+              Whitepaper
+            </a>
             <Link
               href="/request-access"
               className="btn-gold"
@@ -129,6 +142,20 @@ export default function Navbar() {
               </svg>
               Data Room
             </Link>
+            <a
+              href="/DRHM-Protocol-Whitepaper.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-link"
+              style={{ fontSize: "0.95rem", display: "flex", alignItems: "center", gap: "0.4rem" }}
+              onClick={() => setMobileOpen(false)}
+            >
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" style={{ opacity: 0.7 }}>
+                <path d="M3 1.5h4.5L11 5v6.5a1 1 0 01-1 1H3a1 1 0 01-1-1v-9a1 1 0 011-1z" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round"/>
+                <path d="M7.5 1.5V5H11" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round"/>
+              </svg>
+              Whitepaper
+            </a>
             <Link
               href="/request-access"
               className="btn-gold"
