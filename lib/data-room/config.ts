@@ -190,18 +190,22 @@ export const DATA_ROOM_FOLDERS: DataRoomFolder[] = [
         type: "PDF",
         description:
           "Complete technical specification for all 8 protocol contracts",
-        pages: 48,
+        pages: 26,
         lastUpdated: "May 2026",
-        available: false,
+        available: true,
+        storagePath:
+          "Technical Architecture/Veridian_DRHM_Smart_Contract_Architecture_Full_Spec.pdf",
       },
       {
         id: "security-audits",
         name: "Security Audit Reports",
         type: "PDF",
         description: "Trail of Bits and Certora audit findings and remediations",
-        pages: 62,
+        pages: 20,
         lastUpdated: "May 2026",
-        available: false,
+        available: true,
+        storagePath:
+          "Technical Architecture/Veridian_DRHM_Security_Audit_Reports.pdf",
       },
       {
         id: "ai-treasury",
@@ -209,18 +213,22 @@ export const DATA_ROOM_FOLDERS: DataRoomFolder[] = [
         type: "PDF",
         description:
           "RL model architecture, training data, and performance benchmarks",
-        pages: 24,
+        pages: 12,
         lastUpdated: "May 2026",
-        available: false,
+        available: true,
+        storagePath:
+          "Technical Architecture/Veridian_DRHM_AI_Treasury_Agent_Technical_Design.pdf",
       },
       {
         id: "api-docs",
         name: "API & Integration Documentation",
         type: "PDF",
         description: "Full integration guide for merchants, partners, and WPS employers",
-        pages: 40,
+        pages: 14,
         lastUpdated: "May 2026",
-        available: false,
+        available: true,
+        storagePath:
+          "Technical Architecture/Veridian_DRHM_API_and_Integration_Documentation.pdf",
       },
     ],
   },
