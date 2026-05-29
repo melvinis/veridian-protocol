@@ -61,7 +61,7 @@ export const DATA_ROOM_FOLDERS: DataRoomFolder[] = [
         description: "One-page protocol overview for investors",
         lastUpdated: "May 2026",
         available: true,
-        storagePath: "Pitch Deck & Executive Summary/Veridian_DRHM_Executive_Summary.docx",
+        storagePath: "Pitch Deck & Executive Summary/Executive Summary.docx",
       },
       {
         id: "investor-deck",
@@ -70,7 +70,7 @@ export const DATA_ROOM_FOLDERS: DataRoomFolder[] = [
         description: "32-slide comprehensive investor presentation",
         lastUpdated: "May 2026",
         available: true,
-        storagePath: "Pitch Deck & Executive Summary/Veridian_DRHM_Investor_Deck.pptx",
+        storagePath: "Pitch Deck & Executive Summary/Investor Presentation Deck.pptx",
       },
       {
         id: "protocol-overview",
