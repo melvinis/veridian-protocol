@@ -571,6 +571,15 @@ export const DATA_ROOM_FOLDERS: DataRoomFolder[] = [
         available: true,
         storagePath: "Transaction - Neo Digital/VP-CIP-001-2026 Confidential Information Package.docx",
       },
+      {
+        id: "letter-of-intent",
+        name: "Letter of Intent (LOI)",
+        type: "DOCX",
+        description: "Neo Digital's indicative, non-binding letter of intent to Veridian Protocol",
+        lastUpdated: "June 2026",
+        available: true,
+        storagePath: "Transaction - Neo Digital/NDS-LOI-001-2026 Letter of Intent - Neo Digital to Veridian.docx",
+      },
     ],
   },
 ];
