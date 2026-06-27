@@ -39,17 +39,33 @@ export default function RequestAccessPage() {
     return e;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [submitError, setSubmitError] = useState<string | null>(null);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const errs = validate();
     if (Object.keys(errs).length > 0) { setErrors(errs); return; }
     setErrors({});
+    setSubmitError(null);
     setLoading(true);
-    // Simulate submission
-    setTimeout(() => {
-      setLoading(false);
+    try {
+      const res = await fetch("/api/access-request", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formState),
+      });
+      if (!res.ok) {
+        const data = await res.json().catch(() => null);
+        if (data?.errors) setErrors(data.errors);
+        setSubmitError(data?.error || "Something went wrong. Please try again.");
+        return;
+      }
       setSubmitted(true);
-    }, 1400);
+    } catch {
+      setSubmitError("Network error — please check your connection and try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -182,6 +198,12 @@ export default function RequestAccessPage() {
                 <p style={{ color: "#3a4a60", fontSize: "0.75rem", lineHeight: 1.6, textAlign: "center" }}>
                   Your information is kept strictly confidential and used only to process your access request. We do not share details with third parties.
                 </p>
+
+                {submitError && (
+                  <div role="alert" style={{ background: "rgba(240,122,96,0.08)", border: "1px solid rgba(240,122,96,0.3)", borderRadius: "10px", padding: "0.75rem 1rem", color: "#f07a60", fontSize: "0.82rem", lineHeight: 1.5, textAlign: "center" }}>
+                    {submitError}
+                  </div>
+                )}
 
                 {/* Submit */}
                 <button
