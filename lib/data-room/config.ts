@@ -580,6 +580,15 @@ export const DATA_ROOM_FOLDERS: DataRoomFolder[] = [
         available: true,
         storagePath: "Transaction - Neo Digital/NDS-LOI-001-2026 Letter of Intent - Neo Digital to Veridian.docx",
       },
+      {
+        id: "asset-purchase-agreement",
+        name: "Asset Purchase Agreement (APA)",
+        type: "DOCX",
+        description: "Definitive agreement for the sale of the DRHM Protocol IP and technology assets to Neo Digital — draft for counsel review",
+        lastUpdated: "June 2026",
+        available: true,
+        storagePath: "Transaction - Neo Digital/VP-APA-001-2026 Asset Purchase Agreement - Neo Digital.docx",
+      },
     ],
   },
 ];
