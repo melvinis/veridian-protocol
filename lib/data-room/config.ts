@@ -260,6 +260,15 @@ export const DATA_ROOM_FOLDERS: DataRoomFolder[] = [
         available: true,
         storagePath: "Legal & Regulatory/VP-DR-04-NLC-001 No Litigation Confirmation.docx",
       },
+      {
+        id: "power-of-attorney",
+        name: "Power of Attorney Deed",
+        type: "DOCX",
+        description: "Executed power of attorney deed granting authority to act on behalf of the Company",
+        lastUpdated: "June 2026",
+        available: true,
+        storagePath: "Legal & Regulatory/VP-DR-04-POA-001 Power of Attorney Deed.docx",
+      },
     ],
   },
   {
